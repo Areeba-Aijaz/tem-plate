@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="Assets\css\loginpg.css"> 
+</head>
+<body>
+<div class="hero">
+<div class="form-box">
+<div class="button-box">
+    <div id="btn"></div>
+    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+    <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+</div>
+
+<div class="social-icons">
+    <a href="https://www.facebook.com/"><img src="..\Assets\image folder\fb.png" ></a>
+    <a href="https://accounts.google.com/signin/v2/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="..\Assets\image folder\google.png"></a>
+    <a href="https://appleid.apple.com/"><img src="..\Assets\image folder\apple.png"></a>
+<form id="login" class="input-group">
+    <input type="Email" placeholder="Email" required  class="input-field">
+    <input type="password" placeholder="password" required class="input-field" >
+    <input type="checkbox"class="check-box"><span>Remember password</span>
+    <button type="submit" class="submit-btn"> <a href="jobseekerpg.html.html"> Login</a></button>
+    <a href="#">Forget password</a>
+</form>
+<form id="register" class="input-group">
+    <input type="Email" placeholder="Email" required  class="input-field">
+    <input type="password" placeholder="password" required class="input-field" >
+    <input type="checkbox"class="check-box"><span>agree terms & conditions</span>
+    <button type="submit" class="submit-btn">registered</button>
+    <a href="#">Forget password</a>
+</form>
+</div>
+</div>
+</div>
+ 
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function Register(){
+        x.style.left = "-400px"
+        y.style.left = "50px"
+        z.style.left = "110px"
+    }
+    function login(){
+        x.style.left = "50px"
+        y.style.left = "450px"
+        z.style.left = "0px" 
+    }
+</script>
+</body>
+</html> 
